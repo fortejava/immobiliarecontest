@@ -35,6 +35,60 @@
                         "description": "I superstiti, potranno rivolgersi al Pronto Soccorso dell'Ospedale Maggiore di Matera per le medicazioni del caso."
                     }
                 ]
+            },
+            {
+                "eventDay":"25/07/2020",
+                "eventDayTitle":"Arrampichiamoci sul Municipio",
+                "eventScedule":
+                [
+                    {
+                        "hour":"10.00",
+                        "title":"Ritrovo",
+                        "description": "Ritrovo presso la piazza del Municipio, a Matera"
+                    },
+                    {
+                        "hour":"10.30",
+                        "title":"Inizio iscrizioni",
+                        "description": "Si aprono ufficialmente le iscrizioni a questo evento!"
+                    },
+                    {
+                        "hour":"11.00",
+                        "title":"Inizio dell'arrampicata",
+                        "description": "Pronti, partenza, via!!!!!"
+                    },
+                    {
+                        "hour":"13.30",
+                        "title":"Tutti al pronto soccorso!",
+                        "description": "I superstiti, potranno rivolgersi al Pronto Soccorso dell'Ospedale Maggiore di Matera per le medicazioni del caso."
+                    }
+                ]
+            },
+            {
+                "eventDay":"26/07/2020",
+                "eventDayTitle":"Arrampichiamoci sul Municipio",
+                "eventScedule":
+                [
+                    {
+                        "hour":"10.00",
+                        "title":"Ritrovo",
+                        "description": "Ritrovo presso la piazza del Municipio, a Matera"
+                    },
+                    {
+                        "hour":"10.30",
+                        "title":"Inizio iscrizioni",
+                        "description": "Si aprono ufficialmente le iscrizioni a questo evento!"
+                    },
+                    {
+                        "hour":"11.00",
+                        "title":"Inizio dell'arrampicata",
+                        "description": "Pronti, partenza, via!!!!!"
+                    },
+                    {
+                        "hour":"13.30",
+                        "title":"Tutti al pronto soccorso!",
+                        "description": "I superstiti, potranno rivolgersi al Pronto Soccorso dell'Ospedale Maggiore di Matera per le medicazioni del caso."
+                    }
+                ]
             }
         ]
         
@@ -47,7 +101,8 @@
         "eventTitle":"Dal Campidoglio a Suburra",
         "eventSubtitle":"Divertiamoci a correre tra il Campidoglio e la periferia romana!",
         "Testimonial":"Francesca Pinneri",
-        "minimunAge":"14"
+        "minimunAge":"14",
+        "eventProgram": []
         
     },
     {
@@ -58,7 +113,8 @@
         "eventTitle":"Note sotto la Mole",
         "eventSubtitle":"Una autentica opera lirica sotto la Mole Antonelliana: buona notte!!!",
         "Testimonial":"Laura Trapani",
-        "minimunAge":"14"
+        "minimunAge":"14",
+        "eventProgram": []
         
     }
 ]

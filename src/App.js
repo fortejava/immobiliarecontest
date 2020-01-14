@@ -9,6 +9,7 @@ import MainMenuStructure from './assets/json/MainMenuStructure.json';
 import City from './City';
 import MainVisual from './MainVisual';
 import VisualSlider from './VisualSlider';
+import EventDateDetail from './EventDateDetail'
 
 export class App extends Component
 {
@@ -17,15 +18,15 @@ export class App extends Component
     super(props);
 
     //Imposto il visual attivo, impostando il nome della città attualmente visualizata
-    this.state = {activeCity:'',visualData:null}
+    this.state = {activeCity:'',visualData:null, activeDate:null}
     this.activeCityChange = this.activeCityChange.bind(this);
+    this.printEventGlobalData = this.printEventGlobalData.bind(this);
   }
 
-  activeCityChange(newActiveCity)
+  activeCityChange(newActiveCity, dateSeleted)
   {
     const mainVisualData = this.getActualCityVisual(newActiveCity);
-    this.setState({ activeCity: newActiveCity, visualData:mainVisualData });
-    //console.log(this.state.activeCity);
+    this.setState({ activeCity: newActiveCity, visualData:mainVisualData, activeDate:dateSeleted });
   }
 
   getActualCityVisual(cityToActivate) //Funzione che estrae il visual contenente i dati sulla città attualmente selezionata
@@ -57,11 +58,23 @@ export class App extends Component
     return retvalue;
   }
 
-  render() 
+  printEventGlobalData()
   {
-    
 
     return (
+      <React.Fragment>
+        <MainVisual dataObject={this.state.visualData} />
+        {
+          this.state.activeDate != null && <EventDateDetail dataObject={this.state.activeDate} />
+        }
+      </React.Fragment>    
+      )
+  }
+
+  render() 
+  {
+    return (
+      
       <div className="App">
         <Container>
           <Row>
@@ -71,7 +84,7 @@ export class App extends Component
           </Row>
           <Row>
             <Col>
-              { this.state.visualData != null ? <MainVisual dataObject={this.state.visualData} /> : <VisualSlider /> }
+              { this.state.visualData != null ? this.printEventGlobalData() : <VisualSlider /> }
               
             </Col>
           </Row>

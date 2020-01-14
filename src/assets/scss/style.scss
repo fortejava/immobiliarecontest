@@ -4,6 +4,11 @@
     {
         bottom: 3px solid blue;
     }
+
+    &:hover
+    {
+        cursor: default;
+    }
 }
 
 .navbar-brand
